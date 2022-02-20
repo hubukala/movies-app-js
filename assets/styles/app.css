@@ -18,7 +18,6 @@ header {
   width: 100%;
   height: 4rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 2.5rem;
   background: #00329e;
@@ -32,6 +31,7 @@ header h1 {
 
 header button {
   font: inherit;
+  margin: 20px;
   padding: 0.5rem 1rem;
   background: #f67722;
   border: 1px solid #f67722;
@@ -39,6 +39,16 @@ header button {
   border-radius: 6px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
   cursor: pointer;
+}
+
+.addmoviebutton {
+  position: absolute;
+  right: 0px;
+}
+
+.showmoviesbutton {
+  position: absolute;
+  right: 135px;
 }
 
 header button:hover,
