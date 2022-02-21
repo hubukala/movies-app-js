@@ -30,8 +30,8 @@ const deleteMovie = (movieId) => {
     allMovies.splice(movieIndex, 1);
     const listRoot = document.getElementById('movie-list');
     listRoot.children[movieIndex].remove();
-    toggleBackdropElement()
-    deleteMovieModal.classList.remove('visible');
+    cancelMovieDeletion();
+    updateMainPage();
 };
 
 const cancelMovieDeletion = () => {
@@ -128,5 +128,4 @@ mainAddMovieButton.addEventListener('click', showMovieModal);
 backdropElement.addEventListener('click', toggleBackdropElement);
 cancelAddMovieButton.addEventListener('click', cancelAddMovieHandler);
 acceptAddedMovieButton.addEventListener('click', acceptMovieHandler);
-//deleteMoviesYesButton.addEventListener('click', deleteMovie.bind(null, id));
 deleteMoviesCancelButton.addEventListener('click', cancelMovieDeletion);
