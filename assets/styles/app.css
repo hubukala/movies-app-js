@@ -46,11 +46,6 @@ header button {
   right: 0px;
 }
 
-.showmoviesbutton {
-  position: absolute;
-  right: 135px;
-}
-
 header button:hover,
 header button:active {
   background: #f3cc4b;
